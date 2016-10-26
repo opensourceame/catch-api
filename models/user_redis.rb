@@ -36,7 +36,6 @@ class User
   end
 
   def save
-    binding.pry
     redis.set("amsterdam:users:#{id}", self.to_json)
   end
 end
