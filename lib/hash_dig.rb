@@ -3,7 +3,7 @@
 # { a: { :b => { 'c' => 123 }}}.dig('a.b.c') returns 123
 #
 # @author David Kelly 2013
-require 'pry'
+
 class Hash
   def dig dotted_path
 
