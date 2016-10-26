@@ -1,0 +1,6 @@
+db:
+  dsn:    mysql2://localhost/amsterdam
+
+criminal:
+  reveal_factor: 3
+

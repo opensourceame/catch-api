@@ -1,0 +1,85 @@
+"1":
+  moves:
+    -
+      location:   14
+      transport:  tram
+      cost:       5
+    -
+      location:   8
+      transport:  tram
+      cost:       5
+
+  events:
+    - StuckInQueue
+  options:
+    - Hide
+    - HideComeOutStoned
+
+"3":
+  actions:
+    bike:
+      id:           bike
+      type:         purchase
+      token_type:   bike
+      token_cost:   5
+      description:  buy a cheap bike from a junkie
+
+"4":
+  actions:
+    atm:
+      id:           atm
+      type:         atm
+      description:  draw some money from the ATM
+    hide:
+      id:           hide
+      type:         hide
+      description:  hide in the nieuwekerk
+
+"6":
+  actions:
+    hide:
+      id:           hide
+      type:         hide
+      description:  hide in the westerkerk
+
+"8":
+  moves:
+    -
+      location:   1
+      transport:  tram
+      cost:       5
+    -
+      location:   14
+      transport:  tram
+      cost:       5
+
+"11":
+  actions:
+    hide:
+      id:           hide
+      type:         hide
+      modifier:     get_stoned
+      description:  hide in a coffee shop
+
+"14":
+  moves:
+    -
+      location:   1
+      transport:  tram
+      cost:       5
+    -
+      location:   8
+      transport:  tram
+      cost:       10
+  actions:
+    atm:
+      id:           atm
+      type:         atm
+      description:  draw some cash from the ATM
+
+"21":
+  triggers:
+    stuck:
+      type: stuck
+      description: stuck in the queue at Anne Frank House
+
